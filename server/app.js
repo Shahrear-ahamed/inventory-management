@@ -25,7 +25,6 @@ app.use(express.urlencoded({ limit: "5mb", extended: true }));
 
 // body parser setup are here
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // rate limiter are here
 const limiter = rateLimit({
